@@ -1,6 +1,6 @@
 three_multiples = []
 
-# Defines a range of odd numbers between 1 and 51 
+# Defines a range of odd numbers between 1 and 51
 for c in range (1,501,2):
     # Creates a variable that stores the remainders of the numbers within the created range
     leftovers = c % 3
@@ -9,5 +9,6 @@ for c in range (1,501,2):
     # Prints numbers multiples of 3
         three_multiples.append(c)
 total = sum(three_multiples)
+amount = len(three_multiples)
 
-print('Sum of all three odd multiples between the range 1 and 500 is: {}'.format(total))
+print('Sum of {} numbers that are three odd multiples between the range 1 and 500 is: {}'.format(amount,total))
